@@ -46,6 +46,8 @@ def compute_minimal_distance_between_cubes():
 
     assert dss.IsDone()
 
+    print("Minimal distance between cubes: ", dss.Value())
+
     edg = make_edge(dss.PointOnShape1(1), dss.PointOnShape2(1))
     display.DisplayColoredShape([edg], color="CYAN")
 
@@ -73,7 +75,7 @@ def compute_minimal_distance_between_circles():
     Mcircle = gp_Circ(Maxis, r2)
 
     l_circle, m_circle = make_edge(Lcircle), make_edge(Mcircle)
-    display.DisplayShape((l_circle, m_circle))
+    display.DisplayShape([l_circle, m_circle])
 
     # compute the minimal distance between 2 circles
     # the minimal distance here matches the intersection of the circles
