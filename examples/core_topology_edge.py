@@ -24,6 +24,8 @@ from OCC.Core.TColgp import TColgp_Array1OfPnt
 from OCC.Core.Geom import Geom_BezierCurve
 
 from OCC.Display.SimpleGui import init_display
+
+
 display, start_display, add_menu, add_function_to_menu = init_display()
 
 
